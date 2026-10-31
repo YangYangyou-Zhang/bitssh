@@ -7,12 +7,13 @@ A Bitvise-style SSH and serial client for Windows and Linux. The UI is a local w
 ## Download
 
 - **Installers (GitHub Releases only)**: `https://github.com/YangYangyou-Zhang/bitssh-dist/releases`
-- **Baidu Netdisk (mirror)**: link `<TBD>`　code `<TBD>`
+- **Baidu Netdisk (mirror)**: https://pan.baidu.com/s/1m84Fl5vr8ifWX3_YM_AL6A?pwd=yang　code `yang`
+  - All versions are placed in this shared folder; the netdisk has no version management. Use GitHub Releases for versioned downloads.
 - **Source code**:
   - GitHub: `https://github.com/YangYangyou-Zhang/bitssh`
   - Gitee: `https://gitee.com/zhangyangyangyou/bitssh`
 
-> GitHub/Gitee source and GitHub Releases links are final; the Baidu Netdisk link/code is still pending.
+> All download links are final. The netdisk folder keeps receiving new versions but is not version-managed; use GitHub Releases for versioned downloads.
 
 ## Features
 

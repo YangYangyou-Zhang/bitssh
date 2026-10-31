@@ -7,12 +7,13 @@
 ## 下载
 
 - **安装包（仅 GitHub Releases）**：`https://github.com/YangYangyou-Zhang/bitssh-dist/releases`
-- **百度网盘（备用）**：链接：`<待补充>`　提取码：`<待补充>`
+- **百度网盘（备用）**：https://pan.baidu.com/s/1m84Fl5vr8ifWX3_YM_AL6A?pwd=yang　提取码：`yang`
+  - 所有版本统一放在该网盘目录，网盘没有版本管理；需要按版本下载请用 GitHub Releases。
 - **源码**：
   - GitHub：`https://github.com/YangYangyou-Zhang/bitssh`
   - Gitee：`https://gitee.com/zhangyangyangyou/bitssh`
 
-> GitHub/Gitee 源码与 GitHub Releases 地址已填写；百度网盘链接/提取码待补充。
+> 所有下载地址已填写。网盘目录会持续放入新版本，但不做版本管理；版本化下载以 GitHub Releases 为准。
 
 ## 功能
 

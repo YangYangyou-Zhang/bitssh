@@ -7,7 +7,8 @@ A Bitvise-style SSH and serial client for Windows and Linux, with a terminal, du
 ## 下载 / Download
 
 - **安装包（仅 GitHub Releases）/ Installers (GitHub Releases only)**：https://github.com/YangYangyou-Zhang/bitssh-dist/releases
-- **百度网盘 / Baidu Netdisk**：链接 `<待补充>`　提取码 `<待补充>`
+- **百度网盘 / Baidu Netdisk**：https://pan.baidu.com/s/1m84Fl5vr8ifWX3_YM_AL6A?pwd=yang　提取码 `yang`
+  - 所有版本统一放在该网盘目录，网盘不做版本管理；需要按版本下载请使用 GitHub Releases。
 
 ## 文档 / Documentation
 
