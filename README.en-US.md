@@ -12,7 +12,7 @@ A Bitvise-style SSH and serial client for Windows and Linux. The UI is a local w
   - GitHub: `https://github.com/YangYangyou-Zhang/bitssh`
   - Gitee: `https://gitee.com/zhangyangyangyou/bitssh`
 
-> The `<...>` placeholders above should be replaced after the repositories and netdisk upload are ready.
+> GitHub/Gitee source and GitHub Releases links are final; the Baidu Netdisk link/code is still pending.
 
 ## Features
 

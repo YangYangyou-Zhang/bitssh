@@ -12,7 +12,7 @@
   - GitHub：`https://github.com/YangYangyou-Zhang/bitssh`
   - Gitee：`https://gitee.com/zhangyangyangyou/bitssh`
 
-> 上方 `<...>` 为占位符，上传仓库/网盘后替换为实际地址。
+> GitHub/Gitee 源码与 GitHub Releases 地址已填写；百度网盘链接/提取码待补充。
 
 ## 功能
 
