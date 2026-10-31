@@ -6,11 +6,11 @@ A Bitvise-style SSH and serial client for Windows and Linux. The UI is a local w
 
 ## Download
 
-- **Installers (GitHub Releases only)**: `https://github.com/<github-user>/bitssh-dist/releases`
+- **Installers (GitHub Releases only)**: `https://github.com/YangYangyou-Zhang/bitssh-dist/releases`
 - **Baidu Netdisk (mirror)**: link `<TBD>`　code `<TBD>`
 - **Source code**:
-  - GitHub: `https://github.com/<github-user>/bitssh`
-  - Gitee: `https://gitee.com/<gitee-user>/bitssh`
+  - GitHub: `https://github.com/YangYangyou-Zhang/bitssh`
+  - Gitee: `https://gitee.com/zhangyangyangyou/bitssh`
 
 > The `<...>` placeholders above should be replaced after the repositories and netdisk upload are ready.
 

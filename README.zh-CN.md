@@ -6,11 +6,11 @@
 
 ## 下载
 
-- **安装包（仅 GitHub Releases）**：`https://github.com/<GitHub用户名>/bitssh-dist/releases`
+- **安装包（仅 GitHub Releases）**：`https://github.com/YangYangyou-Zhang/bitssh-dist/releases`
 - **百度网盘（备用）**：链接：`<待补充>`　提取码：`<待补充>`
 - **源码**：
-  - GitHub：`https://github.com/<GitHub用户名>/bitssh`
-  - Gitee：`https://gitee.com/<Gitee用户名>/bitssh`
+  - GitHub：`https://github.com/YangYangyou-Zhang/bitssh`
+  - Gitee：`https://gitee.com/zhangyangyangyou/bitssh`
 
 > 上方 `<...>` 为占位符，上传仓库/网盘后替换为实际地址。
 
