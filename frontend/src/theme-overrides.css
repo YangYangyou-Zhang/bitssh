@@ -1,0 +1,315 @@
+/* Theme layer: every rule here reads CSS variables that the shell/UI sets from
+   theme.json, so a colour change takes effect immediately without reloading. */
+
+body,
+.app {
+  background: var(--bg);
+  color: var(--text);
+}
+
+.topbar,
+.bar,
+.tabbar,
+.sidebar,
+.modal,
+.upload-menu {
+  background: var(--bg-elev);
+  border-color: var(--border);
+}
+
+.sidebar {
+  border-right-color: var(--border);
+}
+
+.sidebar-head,
+.profile-name,
+.tab.active,
+.modal input,
+.modal select {
+  color: var(--text-strong);
+}
+
+.profile-sub,
+.fs-size,
+.fs-row .drag-handle,
+.sftp .path,
+.search::placeholder,
+.empty,
+.welcome {
+  color: var(--text-dim);
+}
+
+.profile-row:hover,
+.fs-row:hover {
+  background: var(--bg-hover);
+}
+
+.fs-row.selected {
+  background: var(--selection);
+}
+
+.search,
+.modal input,
+.modal select,
+.fwd-form input,
+.fwd-form select,
+.sftp .path-input,
+.serial-input,
+.sftp-sec,
+.sftp section,
+.splitter,
+.vsplitter {
+  border-color: var(--border);
+}
+
+.search,
+.modal input,
+.modal select,
+.fwd-form input,
+.fwd-form select,
+.sftp .path-input,
+.serial-input {
+  background: var(--bg);
+  color: var(--text);
+}
+
+.splitter,
+.vsplitter {
+  background: var(--border);
+}
+
+.sftp,
+.sftp-sec,
+.side-panel {
+  background: var(--bg-panel);
+}
+
+.brand,
+.sftp .title,
+.modal h2 {
+  color: var(--ok);
+}
+
+button {
+  background: var(--button-bg);
+  border-color: var(--button-border);
+  color: var(--text-strong);
+}
+
+button:hover {
+  background: var(--button-hover);
+}
+
+button.primary {
+  background: var(--accent-bg);
+  border-color: var(--accent-hover);
+}
+
+button.primary:hover {
+  background: var(--accent-hover);
+}
+
+.statusbar {
+  background: var(--status-bg);
+  color: var(--status-fg);
+}
+
+.dot.ready {
+  background: var(--ok);
+}
+
+.dot.connecting,
+.dot.auth,
+.dot.hostkey_check {
+  background: var(--warn);
+}
+
+.dot.closed,
+.pane-error {
+  color: var(--error-fg);
+}
+
+.pane-error {
+  background: var(--error-bg);
+}
+
+.sftp-sec .fs-list,
+.sftp-sec .tr-list {
+  background: transparent;
+}
+
+.fs-row,
+.transfer-row {
+  color: var(--text);
+}
+
+.upload-menu button {
+  color: var(--text-strong);
+}
+
+.upload-menu button:hover {
+  background: var(--selection);
+}
+
+code,
+.mono {
+  color: var(--warn);
+}
+
+.pane-overlay {
+  background: color-mix(in srgb, var(--bg) 72%, transparent);
+  color: var(--warn);
+}
+
+::selection {
+  background: var(--selection);
+  color: var(--selection-text);
+}
+
+.fs-row.selected,
+.profile-row.selected {
+  color: var(--selection-text);
+}
+
+input:focus,
+select:focus,
+.sftp .path-input:focus,
+.serial-input:focus {
+  outline: 1px solid var(--focus-ring);
+  border-color: var(--focus-ring) !important;
+}
+
+button:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 1px;
+}
+
+.modal:focus {
+  outline: none;
+}
+
+/* Tabs */
+.tab {
+  color: var(--text-dim);
+  border-right-color: var(--border);
+}
+
+.tab.active {
+  background: var(--bg);
+  color: var(--text-strong);
+  box-shadow: inset 0 -2px 0 var(--focus-ring);
+}
+
+.tab-close {
+  color: var(--text-dim);
+}
+
+.tab-close:hover {
+  color: var(--text-strong);
+}
+
+.dot {
+  background: var(--text-faint);
+}
+
+/* Panels and separators */
+.sftp {
+  border-left-color: var(--border);
+}
+
+.sftp header,
+.sftp-sec > header {
+  background: var(--bg-elev);
+  border-color: var(--border);
+}
+
+.splitter:hover,
+.vsplitter:hover {
+  background: var(--accent);
+}
+
+.jumps {
+  border-color: var(--border);
+}
+
+.fingerprint {
+  background: var(--bg);
+  border-color: var(--border);
+}
+
+.fingerprint span {
+  color: var(--text-dim);
+}
+
+.drag-handle:hover {
+  color: var(--accent);
+}
+
+.sftp.dragover {
+  outline-color: var(--ok);
+}
+
+.drop-hint {
+  background: color-mix(in srgb, var(--bg) 70%, transparent);
+  color: var(--ok);
+}
+
+/* Status bar + toasts */
+.statusbar .warn {
+  color: var(--warn);
+}
+
+.toast {
+  background: var(--error-bg);
+  color: var(--error-fg);
+}
+
+.toast.info {
+  background: var(--accent-bg);
+  color: #e7faf1;
+}
+
+.fs-actions button:hover,
+.upload-menu button:hover {
+  color: var(--text-strong);
+}
+
+/* Inputs, labels and small controls that kept old hard-coded greys */
+.filebtn {
+  background: var(--button-bg);
+  border-color: var(--button-border);
+  color: var(--text-strong);
+}
+
+.filebtn:hover {
+  background: var(--button-hover);
+}
+
+.inline,
+.inline select,
+.modal label,
+.serialbar .inline,
+.jumps-head,
+.fwd-form label,
+.fs-actions button {
+  color: var(--text-dim);
+}
+
+.inline select {
+  background: var(--bg);
+  color: var(--text-strong);
+  border-color: var(--border);
+}
+
+.transfer-row .status.done {
+  color: var(--ok);
+}
+
+.transfer-row .status.failed {
+  color: var(--err);
+}
+
+.transfer-row .status.conflict,
+.transfer-row .status.running {
+  color: var(--warn);
+}

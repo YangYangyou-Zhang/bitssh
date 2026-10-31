@@ -1,0 +1,22 @@
+[project]
+name = "bitssh"
+version = "0.1.0"
+description = "SSH + serial client with terminal, SFTP and port forwarding"
+requires-python = ">=3.12"
+dependencies = [
+    "asyncssh==2.24.1",
+    "cryptography>=48.0.1,<51",
+    "fastapi>=0.111",
+    "uvicorn[standard]>=0.30",
+    "pydantic>=2",
+    "pyserial==3.5",
+    "keyring>=25",
+    "platformdirs>=4",
+]
+
+[project.optional-dependencies]
+desktop = ["PyQt6==6.11.0", "PyQt6-WebEngine==6.11.0"]
+dev = ["pytest>=8", "pyinstaller>=6.7"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

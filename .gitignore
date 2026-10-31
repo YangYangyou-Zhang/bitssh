@@ -1,0 +1,20 @@
+# Runtime / build intermediates (never commit)
+.venv/
+__pycache__/
+*.pyc
+build/
+dist/
+node_modules/
+.test/
+frontend/dist/
+*.spec.bak
+.pytest_cache/
+*.log
+tests/legacy_rsa
+tests/legacy_rsa.pub
+
+# Extracted onedir trees are intermediates; the archives below are the
+# distributable build results and are tracked.
+dist_win/bitssh/
+dist_linux/bitssh/
+dist_linux/deb-root/

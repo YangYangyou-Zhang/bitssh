@@ -1,0 +1,70 @@
+{
+  "app": { "title": "bitssh", "sessions": "Sessions", "new": "New", "settings": "Settings", "noSession": "Pick a session on the left to start" },
+  "fwd": { "panel": "Forwards", "local": "Local", "remote": "Remote", "socks": "SOCKS", "bind": "Listen", "dest": "Target", "start": "Start", "stop": "Stop", "none": "No forwards", "auto": "0 = auto", "type": "Type" },
+  "serial": { "dtr": "DTR", "rts": "RTS", "break": "BREAK", "hex": "Hex", "timestamps": "Timestamps", "send": "Send", "placeholder": "Type data to send, Enter to send", "crlf": "CRLF" },
+  "sftp": { "panel": "SFTP", "local": "Local", "remote": "Remote", "up": "Up", "home": "Home", "refresh": "Refresh", "download": "Download", "upload": "Upload", "transfers": "Transfers", "empty": "Empty", "select": "Select a file first", "edits": "Edit sync", "uploadNow": "Upload now", "dropHint": "Drop to upload into the current folder", "dropDownload": "Drop to download into the local folder", "editDownloading": "Downloading", "editReady": "Ready", "editUploading": "Uploading", "editSynced": "Synced", "editConflict": "Changed remotely", "editError": "Sync failed", "resolveOverwrite": "Overwrite remote", "resolveReload": "Reload remote", "savedTo": "Saved to", "uploaded": "Uploaded", "openFolder": "Show in folder", "uploadFailed": "Upload failed", "uploadFolder": "Upload folder", "uploadFiles": "Upload files…", "uploadMenu": "Upload…", "confirmDelete": "Delete {{name}}?", "deleteDirWarn": "Recursively delete folder {{name}} and all its contents?", "overwritePrompt": "{{name}} already exists locally. Overwrite?", "renamePrompt": "Rename {{name}} to:", "folderUnsupported": "The browser cannot read the folder structure; use the Upload folder button", "folderDragUnsupported": "Folders cannot be dragged out; use the row ↓ button", "export": "Export to…", "dragOut": "Press and drag to Explorer", "dragUnavailable": "Drag-out unavailable (desktop shell required)", "dragOutOpened": "Drag-out list opened: drag the items from that popup to Explorer", "deleteSelected": "Delete selected", "confirmDeleteMany": "Delete the {{count}} selected item(s)?" },
+  "menu": { "open": "Open…", "saveAs": "Save as…", "import": "Import sessions…", "export": "Export sessions…" },
+  "window": { "redock": "Move back to main window", "detach": "Open in new window" },
+  "appearance": {
+    "title": "Appearance", "hint": "Colours live in {{path}} — you can edit that JSON directly", "reset": "Restore defaults",
+    "invalidColor": "Colour must be #RRGGBB (opacity 0.2–1.0)", "saveFailed": "Save failed",
+    "group": { "base": "Backgrounds", "text": "Text", "accent": "Accents & states", "button": "Buttons", "status": "Status bar & errors", "term": "Terminal", "window": "Window & selection" }
+  },
+  "theme": {
+    "bg": "Window background", "bgElev": "Bar / dialog background", "bgPanel": "Panel background", "bgHover": "Hover background",
+    "border": "Border", "borderStrong": "Strong border",
+    "text": "Body text", "textStrong": "Emphasis text", "textDim": "Secondary text", "textFaint": "Faint text",
+    "accent": "Accent", "accentHover": "Accent hover", "accentBg": "Accent background", "selection": "Selection background",
+    "ok": "Success", "warn": "Warning", "err": "Error",
+    "buttonBg": "Button background", "buttonHover": "Button hover", "buttonBorder": "Button border",
+    "statusBg": "Status bar background", "statusFg": "Status bar text", "errorBg": "Error banner background", "errorFg": "Error banner text",
+    "termBg": "Terminal background", "termFg": "Terminal text", "termCursor": "Cursor", "termSel": "Terminal selection",
+    "selectionText": "Highlighted text", "focusRing": "Focus ring", "opacity": "Window opacity"
+  },
+  "common": { "save": "Save", "cancel": "Cancel", "delete": "Delete", "close": "Close", "confirm": "OK", "yes": "Yes", "no": "No", "connect": "Connect", "edit": "Edit", "duplicate": "Duplicate", "untitled": "Untitled", "rename": "Rename", "open": "Open" },
+  "profile": {
+    "new": "New session", "edit": "Edit session", "name": "Name", "protocol": "Protocol",
+    "host": "Host", "port": "Port", "username": "Username", "auth": "Authentication",
+    "authPassword": "Password", "authKey": "Private key", "authAgent": "SSH agent", "authKbdint": "Keyboard-interactive",
+    "keyPath": "Key file", "password": "Password", "passwordKeep": "Leave empty to keep the current password",
+    "term": "Terminal type", "note": "Note", "serial": "Serial", "baudrate": "Baud rate",
+    "jump": "Jump hosts", "addJump": "Add jump host", "keyFile": "Key file", "hostPlaceholder": "Host"
+  },
+  "terminal": { "connecting": "Connecting…", "auth": "Authenticating…", "ready": "Connected", "closed": "Disconnected", "hostkey": "Verifying host key…" },
+  "hostkey": {
+    "title": "Unknown host key", "body": "First connection to {{host}}:{{port}}. Verify the fingerprint before trusting it.",
+    "fingerprint": "Fingerprint", "keyType": "Type",
+    "once": "Trust once", "always": "Trust permanently", "reject": "Reject"
+  },
+  "kbdint": { "title": "Input required", "submit": "Submit" },
+  "password": { "title": "Password required", "body": "{{name}} needs a password to connect." },
+  "status": { "workspace": "Workspace", "dirty": "Unsaved", "conflict": "Changed on disk", "language": "Language", "renderer": "Renderer" },
+  "errors": {
+    "AUTH_FAILED": "Authentication failed: wrong username or credentials",
+    "CREDENTIAL_REQUIRED": "Missing credentials; enter the password first",
+    "HOSTKEY_MISMATCH": "Host key does not match the saved record (possible MITM); connection blocked",
+    "HOSTKEY_REJECTED": "Host key rejected",
+    "HOSTKEY_UNAVAILABLE": "Could not obtain the host key",
+    "ALGO_MISMATCH": "Algorithm negotiation failed: server rejects our algorithm set",
+    "CONNECT_FAILED": "Connection failed",
+    "CONNECTION_LOST": "Connection lost",
+    "VAULT_LOCKED": "Credential vault is locked",
+    "UNSUPPORTED_PROTOCOL": "Unsupported protocol",
+    "INVALID_PROFILE": "Incomplete session settings",
+    "SESSION_NOT_FOUND": "Session not found",
+    "PROFILE_NOT_FOUND": "Session profile not found",
+    "IMPORT_VERSION_TOO_NEW": "Config file was written by a newer version",
+    "IMPORT_INVALID_FORMAT": "Invalid config file format",
+    "WORKSPACE_CONFLICT": "Workspace changed on disk; autosave paused",
+    "WORKSPACE_MISSING": "Workspace file is missing",
+    "UNAUTHORIZED": "Unauthorized",
+    "SERIAL_PORT_BUSY": "Serial port is busy",
+    "SERIAL_PERMISSION_DENIED": "No permission for the serial port (add yourself to dialout on Linux)",
+    "FORWARD_PORT_IN_USE": "Forward port already in use",
+    "TRANSFER_FAILED": "Transfer failed",
+    "REMOTE_FORWARD_DENIED": "Remote side refused the forward",
+    "NO_PENDING_HOSTKEY": "No host key awaiting confirmation",
+    "NO_PENDING_KBDINT": "No keyboard-interactive prompt pending",
+    "UNKNOWN": "Unknown error"
+  }
+}

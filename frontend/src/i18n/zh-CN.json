@@ -1,0 +1,70 @@
+{
+  "app": { "title": "bitssh", "sessions": "会话", "new": "新建", "settings": "设置", "noSession": "从左侧选择一个会话开始" },
+  "fwd": { "panel": "转发", "local": "本地", "remote": "远程", "socks": "SOCKS", "bind": "监听", "dest": "目标", "start": "启动", "stop": "停止", "none": "暂无转发", "auto": "0 = 自动", "type": "类型" },
+  "serial": { "dtr": "DTR", "rts": "RTS", "break": "BREAK", "hex": "十六进制", "timestamps": "时间戳", "send": "发送", "placeholder": "输入要发送的内容，回车发送", "crlf": "回车换行" },
+  "sftp": { "panel": "SFTP", "local": "本机", "remote": "远程", "up": "上级", "home": "主页", "refresh": "刷新", "download": "下载", "upload": "上传", "transfers": "传输", "empty": "空目录", "select": "先选中一个文件", "edits": "编辑同步", "uploadNow": "立即上传", "dropHint": "松手即可上传到当前目录", "dropDownload": "松手即可下载到本机目录", "editDownloading": "下载中", "editReady": "已就绪", "editUploading": "回传中", "editSynced": "已同步", "editConflict": "远端已变", "editError": "同步失败", "resolveOverwrite": "覆盖远端", "resolveReload": "重新下载", "savedTo": "已保存到", "uploaded": "已上传", "openFolder": "打开位置", "uploadFailed": "上传失败", "uploadFolder": "上传文件夹", "uploadFiles": "上传文件…", "uploadMenu": "上传…", "confirmDelete": "确定删除 {{name}}？", "deleteDirWarn": "确定递归删除目录 {{name}} 及其全部内容？", "overwritePrompt": "本机已存在 {{name}}，要覆盖吗？", "renamePrompt": "重命名 {{name}} 为：", "folderUnsupported": "浏览器无法读取文件夹结构，请用「上传文件夹」按钮选择目录", "folderDragUnsupported": "文件夹不支持拖出，请使用行内 ↓ 下载", "export": "导出到…", "dragOut": "按住拖出到资源管理器", "dragUnavailable": "拖出功能不可用（需要桌面外壳支持）", "dragOutOpened": "已打开拖出列表：把弹出列表里的文件拖到资源管理器即可", "deleteSelected": "删除选中", "confirmDeleteMany": "确定删除选中的 {{count}} 项？" },
+  "menu": { "open": "打开…", "saveAs": "另存为…", "import": "导入会话…", "export": "导出会话…" },
+  "window": { "redock": "移回主窗口", "detach": "在新窗口打开" },
+  "appearance": {
+    "title": "外观", "hint": "配色保存在 {{path}}，可直接编辑该 JSON 文件", "reset": "恢复默认",
+    "invalidColor": "颜色格式应为 #RRGGBB（透明度为 0.2–1.0）", "saveFailed": "保存失败",
+    "group": { "base": "基础背景", "text": "文字", "accent": "强调与状态", "button": "按钮", "status": "状态栏与错误", "term": "终端", "window": "窗口与选中" }
+  },
+  "theme": {
+    "bg": "窗口背景", "bgElev": "栏/对话框背景", "bgPanel": "面板背景", "bgHover": "悬停背景",
+    "border": "边框", "borderStrong": "强边框",
+    "text": "普通文字", "textStrong": "重点文字", "textDim": "次要文字", "textFaint": "弱化文字",
+    "accent": "强调色", "accentHover": "强调悬停", "accentBg": "强调背景", "selection": "选中背景",
+    "ok": "正常", "warn": "警告", "err": "错误",
+    "buttonBg": "按钮背景", "buttonHover": "按钮悬停", "buttonBorder": "按钮边框",
+    "statusBg": "状态栏背景", "statusFg": "状态栏文字", "errorBg": "错误条背景", "errorFg": "错误条文字",
+    "termBg": "终端背景", "termFg": "终端文字", "termCursor": "光标", "termSel": "终端选中",
+    "selectionText": "高亮文字", "focusRing": "焦点/选择框", "opacity": "窗口透明度"
+  },
+  "common": { "save": "保存", "cancel": "取消", "delete": "删除", "close": "关闭", "confirm": "确定", "yes": "是", "no": "否", "connect": "连接", "edit": "编辑", "duplicate": "复制", "untitled": "未命名", "rename": "重命名", "open": "打开" },
+  "profile": {
+    "new": "新建会话", "edit": "编辑会话", "name": "名称", "protocol": "类型",
+    "host": "主机", "port": "端口", "username": "用户名", "auth": "认证方式",
+    "authPassword": "密码", "authKey": "私钥", "authAgent": "SSH Agent", "authKbdint": "键盘交互",
+    "keyPath": "私钥文件", "password": "密码", "passwordKeep": "留空则保持原密码",
+    "term": "终端类型", "note": "备注", "serial": "串口", "baudrate": "波特率",
+    "jump": "跳板机", "addJump": "添加跳板", "keyFile": "私钥文件", "hostPlaceholder": "主机"
+  },
+  "terminal": { "connecting": "正在连接…", "auth": "正在认证…", "ready": "已连接", "closed": "已断开", "hostkey": "正在校验主机密钥…" },
+  "hostkey": {
+    "title": "未知的主机密钥", "body": "第一次连接到 {{host}}:{{port}}。请核对指纹后再信任。",
+    "fingerprint": "指纹", "keyType": "类型",
+    "once": "仅本次信任", "always": "永久信任", "reject": "拒绝"
+  },
+  "kbdint": { "title": "需要输入", "submit": "提交" },
+  "password": { "title": "请输入密码", "body": "{{name}} 需要密码才能连接。" },
+  "status": { "workspace": "工作区", "dirty": "未保存", "conflict": "文件已被外部修改", "language": "语言", "renderer": "渲染器" },
+  "errors": {
+    "AUTH_FAILED": "认证失败：用户名或凭据不正确",
+    "CREDENTIAL_REQUIRED": "缺少凭据，请先填写密码",
+    "HOSTKEY_MISMATCH": "主机密钥与记录不一致，可能是中间人攻击，已阻止连接",
+    "HOSTKEY_REJECTED": "已拒绝该主机密钥",
+    "HOSTKEY_UNAVAILABLE": "无法获取主机密钥",
+    "ALGO_MISMATCH": "算法协商失败：服务器不支持当前算法集合",
+    "CONNECT_FAILED": "连接失败",
+    "CONNECTION_LOST": "连接已断开",
+    "VAULT_LOCKED": "凭据保险库未解锁",
+    "UNSUPPORTED_PROTOCOL": "不支持的协议",
+    "INVALID_PROFILE": "会话配置不完整",
+    "SESSION_NOT_FOUND": "会话不存在",
+    "PROFILE_NOT_FOUND": "会话配置不存在",
+    "IMPORT_VERSION_TOO_NEW": "配置文件版本高于当前程序",
+    "IMPORT_INVALID_FORMAT": "配置文件格式无效",
+    "WORKSPACE_CONFLICT": "工作区文件已被外部修改，自动保存已暂停",
+    "WORKSPACE_MISSING": "工作区文件不存在",
+    "UNAUTHORIZED": "未授权",
+    "SERIAL_PORT_BUSY": "串口被占用",
+    "SERIAL_PERMISSION_DENIED": "没有串口权限（Linux 需加入 dialout 组）",
+    "FORWARD_PORT_IN_USE": "转发端口已被占用",
+    "TRANSFER_FAILED": "传输失败",
+    "REMOTE_FORWARD_DENIED": "远端拒绝转发请求",
+    "NO_PENDING_HOSTKEY": "当前没有待确认的主机密钥",
+    "NO_PENDING_KBDINT": "当前没有待回答的交互式认证",
+    "UNKNOWN": "发生未知错误"
+  }
+}
