@@ -984,3 +984,7 @@ button:disabled {
 .known-host-row button {
   flex: none;
 }
+
+.modal-backdrop.modal-top {
+  z-index: 50;
+}

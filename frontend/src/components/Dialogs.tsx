@@ -138,7 +138,7 @@ export function ConfirmDialog() {
   };
 
   return (
-    <div className="modal-backdrop">
+    <div className="modal-backdrop modal-top">
       <div
         className="modal"
         tabIndex={0}
@@ -194,7 +194,7 @@ export function PromptDialog() {
 
   if (!message) return null;
   return (
-    <div className="modal-backdrop">
+    <div className="modal-backdrop modal-top">
       <div className="modal">
         <h2>{message}</h2>
         <input
