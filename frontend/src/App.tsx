@@ -3,6 +3,7 @@ import { useTranslation } from "react-i18next";
 import { ApiError, TOKEN, api, type Profile } from "./api/client";
 import AppearanceDialog from "./components/AppearanceDialog";
 import ForwardPanel from "./components/ForwardPanel";
+import KnownHostsDialog from "./components/KnownHostsDialog";
 import Sidebar from "./components/Sidebar";
 import SftpPanel from "./components/SftpPanel";
 import TerminalPane from "./components/TerminalPane";
@@ -36,6 +37,7 @@ export default function App() {
   const [editing, setEditing] = useState<Profile | "new" | null>(null);
   const [showSftp, setShowSftp] = useState(false);
   const [showAppearance, setShowAppearance] = useState(false);
+  const [showKnownHosts, setShowKnownHosts] = useState(false);
   const loadTheme = useApp((s) => s.loadTheme);
   const [showForwards, setShowForwards] = useState(false);
   const [sidebarWidth, setSidebarWidth] = useState(() =>
@@ -189,6 +191,7 @@ export default function App() {
         >
           {t("fwd.panel")}
         </button>
+        <button onClick={() => setShowKnownHosts(true)}>{t("knownHosts.title")}</button>
         <button onClick={() => setShowAppearance(true)}>{t("appearance.title")}</button>
         <span className="spacer" />
         <label className="inline">
@@ -316,6 +319,7 @@ export default function App() {
       <ConfirmDialog />
       <PromptDialog />
       {showAppearance && <AppearanceDialog onClose={() => setShowAppearance(false)} />}
+      {showKnownHosts && <KnownHostsDialog onClose={() => setShowKnownHosts(false)} />}
     </div>
   );
 }

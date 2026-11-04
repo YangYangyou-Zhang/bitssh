@@ -41,6 +41,19 @@ export interface FsEntry {
   mtime: number;
 }
 
+export interface KnownHost {
+  host: string;
+  port: number;
+  key_type: string;
+  fingerprint: string | null;
+  added_at: string;
+}
+
+export interface KnownHostsResponse {
+  path: string;
+  known_hosts: KnownHost[];
+}
+
 export interface Forward {
   id: string;
   session_id: string;
@@ -123,6 +136,17 @@ export const api = {
       body: JSON.stringify({ theme }),
     }),
   resetTheme: () => request<ThemeResponse>("/api/theme", { method: "DELETE" }),
+  knownHosts: () => request<KnownHostsResponse>("/api/known-hosts"),
+  deleteKnownHost: (host: string, port: number, keyType: string) => {
+    const query = new URLSearchParams({
+      host,
+      port: String(port),
+      key_type: keyType,
+    });
+    return request<KnownHostsResponse>(`/api/known-hosts?${query.toString()}`, {
+      method: "DELETE",
+    });
+  },
   saveWorkspace: (force = false) =>
     request<WorkspaceState>("/api/workspace/save", {
       method: "POST",

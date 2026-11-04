@@ -929,3 +929,58 @@ button:disabled {
 .transfer-row .status.running {
   color: #e2c08d;
 }
+
+.known-hosts {
+  width: min(760px, 94vw);
+  max-height: 86vh;
+}
+
+.known-host-list {
+  display: flex;
+  flex-direction: column;
+  max-height: 55vh;
+  overflow-y: auto;
+  border: 1px solid var(--border, #3c3c3c);
+  border-radius: 6px;
+}
+
+.known-host-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--border, #3c3c3c);
+}
+
+.known-host-row:last-child {
+  border-bottom: none;
+}
+
+.known-host-main {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.known-host-name {
+  color: var(--text-strong, #ffffff);
+  font-weight: 600;
+}
+
+.known-host-meta {
+  color: var(--text-dim, #9d9d9d);
+  font-size: 11px;
+}
+
+.known-host-fp {
+  color: var(--warn, #d7ba7d);
+  font-family: Consolas, "Noto Sans Mono CJK SC", monospace;
+  font-size: 11px;
+  word-break: break-all;
+}
+
+.known-host-row button {
+  flex: none;
+}

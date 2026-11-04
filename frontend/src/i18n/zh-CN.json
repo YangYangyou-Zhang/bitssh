@@ -21,6 +21,15 @@
     "termBg": "终端背景", "termFg": "终端文字", "termCursor": "光标", "termSel": "终端选中",
     "selectionText": "高亮文字", "focusRing": "焦点/选择框", "opacity": "窗口透明度"
   },
+  "knownHosts": {
+    "title": "已知主机",
+    "hint": "记录保存在当前工作区 {{path}}。删除后下次连接会重新确认主机指纹。",
+    "empty": "暂无已信任的主机",
+    "delete": "删除",
+    "deleteConfirm": "删除 {{host}}:{{port}} 的 {{type}} 主机密钥？下次连接会重新校验。",
+    "deleted": "已删除，下次连接将重新确认主机密钥",
+    "invalidFingerprint": "无法计算指纹"
+  },
   "common": { "save": "保存", "cancel": "取消", "delete": "删除", "close": "关闭", "confirm": "确定", "yes": "是", "no": "否", "connect": "连接", "edit": "编辑", "duplicate": "复制", "untitled": "未命名", "rename": "重命名", "open": "打开" },
   "profile": {
     "new": "新建会话", "edit": "编辑会话", "name": "名称", "protocol": "类型",
@@ -42,7 +51,7 @@
   "errors": {
     "AUTH_FAILED": "认证失败：用户名或凭据不正确",
     "CREDENTIAL_REQUIRED": "缺少凭据，请先填写密码",
-    "HOSTKEY_MISMATCH": "主机密钥与记录不一致，可能是中间人攻击，已阻止连接",
+    "HOSTKEY_MISMATCH": "主机密钥与记录不一致，可能是中间人攻击，已阻止连接。若确认服务器已更换密钥，请在「已知主机」中删除旧记录后重连",
     "HOSTKEY_REJECTED": "已拒绝该主机密钥",
     "HOSTKEY_UNAVAILABLE": "无法获取主机密钥",
     "ALGO_MISMATCH": "算法协商失败：服务器不支持当前算法集合",
@@ -65,6 +74,7 @@
     "REMOTE_FORWARD_DENIED": "远端拒绝转发请求",
     "NO_PENDING_HOSTKEY": "当前没有待确认的主机密钥",
     "NO_PENDING_KBDINT": "当前没有待回答的交互式认证",
+    "KNOWN_HOST_NOT_FOUND": "主机密钥记录不存在",
     "UNKNOWN": "发生未知错误"
   }
 }

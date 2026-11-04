@@ -13,6 +13,7 @@ from .api import credentials as credentials_api
 from .api import downloads as downloads_api
 from .api import edits as edits_api
 from .api import forwards as forwards_api
+from .api import known_hosts as known_hosts_api
 from .api import local_fs as local_fs_api
 from .api import profiles as profiles_api
 from .api import serial as serial_api
@@ -164,6 +165,7 @@ def create_app(token: str, shutdown: ShutdownFlag) -> FastAPI:
 
     app.include_router(workspace_api.router)
     app.include_router(profiles_api.router)
+    app.include_router(known_hosts_api.router)
     app.include_router(credentials_api.router)
     app.include_router(sessions_api.router)
     app.include_router(sftp_api.router)

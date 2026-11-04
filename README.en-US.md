@@ -78,6 +78,7 @@ A Bitvise-style SSH and serial client for Windows and Linux. The UI is a local w
 - `Origin`/`Host` are validated, `/docs`, CORS and devtools are disabled, a CSP restricts resource origins, and external navigation is blocked.
 - Credentials live in an AES-256-GCM `vault.bin` whose 32-byte master key is stored in the OS keyring; private keys are never sent to the renderer.
 - Host-key changes are always blocked and require manual action.
+- Known-hosts manager: view `host:port`, key type, SHA-256 fingerprint and added time in the app; deleting an entry makes the next connection ask for verification again. New keys are never accepted automatically.
 
 ## Architecture
 

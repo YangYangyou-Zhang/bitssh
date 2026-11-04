@@ -1,10 +1,22 @@
 from __future__ import annotations
 
+import base64
+import hashlib
 from datetime import datetime, timezone
 
 from asyncssh import SSHKey
 
 from ..models import KnownHostRecord
+
+
+def fingerprint(record: KnownHostRecord) -> str | None:
+    """SHA256 fingerprint of the stored key blob, matching asyncssh's format."""
+    try:
+        blob = base64.b64decode(record.key_b64.encode("ascii"), validate=True)
+    except Exception:
+        return None
+    digest = base64.b64encode(hashlib.sha256(blob).digest()).decode("ascii").rstrip("=")
+    return f"SHA256:{digest}"
 
 
 def host_field(host: str, port: int) -> str:

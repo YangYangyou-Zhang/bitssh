@@ -21,6 +21,15 @@
     "termBg": "Terminal background", "termFg": "Terminal text", "termCursor": "Cursor", "termSel": "Terminal selection",
     "selectionText": "Highlighted text", "focusRing": "Focus ring", "opacity": "Window opacity"
   },
+  "knownHosts": {
+    "title": "Known hosts",
+    "hint": "Stored in the current workspace {{path}}. After deletion the next connection will ask you to verify the fingerprint again.",
+    "empty": "No trusted hosts yet",
+    "delete": "Delete",
+    "deleteConfirm": "Delete the {{type}} host key for {{host}}:{{port}}? The next connection will verify it again.",
+    "deleted": "Deleted; the next connection will ask for the host key again",
+    "invalidFingerprint": "Fingerprint unavailable"
+  },
   "common": { "save": "Save", "cancel": "Cancel", "delete": "Delete", "close": "Close", "confirm": "OK", "yes": "Yes", "no": "No", "connect": "Connect", "edit": "Edit", "duplicate": "Duplicate", "untitled": "Untitled", "rename": "Rename", "open": "Open" },
   "profile": {
     "new": "New session", "edit": "Edit session", "name": "Name", "protocol": "Protocol",
@@ -42,7 +51,7 @@
   "errors": {
     "AUTH_FAILED": "Authentication failed: wrong username or credentials",
     "CREDENTIAL_REQUIRED": "Missing credentials; enter the password first",
-    "HOSTKEY_MISMATCH": "Host key does not match the saved record (possible MITM); connection blocked",
+    "HOSTKEY_MISMATCH": "Host key does not match the saved record (possible MITM); connection blocked. If the server key was legitimately changed, delete the old entry in Known hosts and reconnect",
     "HOSTKEY_REJECTED": "Host key rejected",
     "HOSTKEY_UNAVAILABLE": "Could not obtain the host key",
     "ALGO_MISMATCH": "Algorithm negotiation failed: server rejects our algorithm set",
@@ -65,6 +74,7 @@
     "REMOTE_FORWARD_DENIED": "Remote side refused the forward",
     "NO_PENDING_HOSTKEY": "No host key awaiting confirmation",
     "NO_PENDING_KBDINT": "No keyboard-interactive prompt pending",
+    "KNOWN_HOST_NOT_FOUND": "Known-host record not found",
     "UNKNOWN": "Unknown error"
   }
 }
